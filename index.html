@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage Web App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background: radial-gradient(circle at 0% 100%,rgb(166, 219, 255), rgb(116, 199, 255), rgb(59, 177, 255), rgb(0, 143, 238), rgb(0, 91, 220));
+            color: white;
+            padding: 10px;
+        }
+        img{
+            height: 280px;
+            width: 280px;
+            margin: 20px;
+            border: 3px solid black;
+            border-radius: 0px 30px 0px 30px;
+            transition: all 1s ease-in-out;
+        }
+        img:hover{
+            border-radius: 30px 0px 30px 0px;
+            transform: scale(1.1) rotate(360deg);
+        }
+        label{
+            font-size: x-large;
+        }
+        button{
+            border: 2.5px solid white;
+            background-color: rgb(0, 153, 255);
+            border-radius: 10px;
+            font-size: 18px;
+            padding: 3px 6px;
+            font-weight: 400;
+            transition: 0.5s;
+        }
+        button:hover{
+            background-color: rgba(0, 103, 255, 0.791);
+            transform: translateY(3px);
+        }
+        .inline{
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Collage Web App</h1>
+        <h5>Kindly click <b>'Allow'</b> for the camera permissions.</h5><br>
+        <h3>Speak <b>'Take a selfie'</b> to take your selfie and make its collage.</h3>
+        <button>Click the selfie</button><br><br>
+        <div id="camera"></div><br>
+        <label>Your Selfies</label>
+        <br>
+        <br>
+        <div id="div">
+            <div class="inline"><img id="img1" src="image.jpeg"></div>
+            <div class="inline"><img src="image.jpeg"></div><br>
+            <div class="inline"><img id="img3" src="image.jpeg"></div>
+        </div>
+    </center>
+</body>
+
+</html>
